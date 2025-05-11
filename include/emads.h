@@ -2,45 +2,33 @@
  * @Author: shangchuan shangchuan97@163.com
  * @Date: 2025-05-08 21:36:20
  * @LastEditors: shangchuan shangchuan97@163.com
- * @LastEditTime: 2025-05-08 22:55:34
+ * @LastEditTime: 2025-05-11 23:31:40
  * @FilePath: \3.rearrange-list-using-Cpp-language\include\emads.h
  */
 #ifndef _EMADS_H
 #define _EMADS_H
 
-typedef struct node
+#include <iostream>
+#include <vector>
+using namespace std;
+
+struct ListNode
 {
-    int data;
-    struct node *next;
-}Node;
+    int val;
+    struct ListNode *next;
+    ListNode(int x) : val(x), next(nullptr) {}
+};
 
 class list
 {
     private:
         
     public:
-        Node* add_tail(Node* tail, int data);
-        list();
-        ~list();
+    static ListNode* createNodeList(const vector<int>& inputArray);
+    void* printfNodeList(ListNode* head);
+    list();
+    ~list();
 };
-
-
-
-Node *list::add_tail(Node *tail, int data)
-{
-    return nullptr;
-}
-
-list::list()
-{
-
-}
-
-list::~list()
-{
-    
-}
-
 
 
 #endif
