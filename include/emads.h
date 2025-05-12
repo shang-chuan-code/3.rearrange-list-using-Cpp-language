@@ -25,7 +25,7 @@ class list
         
     public:
     static ListNode* createNodeList(const vector<int>& inputArray);
-    void* printfNodeList(ListNode* head);
+    void printfNodeList(ListNode* head);
     list();
     ~list();
 };

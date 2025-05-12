@@ -2,7 +2,7 @@
  * @Author: shangchuan shangchuan97@163.com
  * @Date: 2025-05-06 22:50:01
  * @LastEditors: shangchuan shangchuan97@163.com
- * @LastEditTime: 2025-05-11 23:25:17
+ * @LastEditTime: 2025-05-12 22:53:03
  * @FilePath: \3.rearrange-list-using-Cpp-language\src\emads.cpp
  */
 #include <iostream>
@@ -25,7 +25,7 @@ ListNode * list:: createNodeList(const vector<int>& inputArray)
     return head;
 }
 
-void* list::printfNodeList(ListNode* head)
+void list::printfNodeList(ListNode* head)
 {
     ListNode* current = head;
     
